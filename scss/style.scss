@@ -38,7 +38,6 @@ html {
     scroll-behavior: smooth;
 }
 body.lock {
-    overflow: hidden;
 }
 
 .container{
@@ -156,16 +155,25 @@ li {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &.active {
+            background-color: rgba(0,0,0,0.5);
+        }
     }
 	&__title {
         color: #fff;
         font-size: 150px;
         text-align: center;
+        &.active {
+            color: rgba(237, 236, 243, 0.5);
+        }
 	}
 	&__subtitle {
         color: #11749E;
         font-size: 25px;
         letter-spacing: 25px;
+        &.active {
+            color: rgba(53, 114, 184, 0.5);
+        }
 	}
 
 
@@ -251,9 +259,9 @@ li {
             position: fixed;
             top: 0;
             left: -100%;
-            width: 100%;
+            width: 75%;
             height: 100%;
-            background-color: #11749E;
+            background-color: #1b6281;
             transition: all .3s ease 0s;
             padding: 70px 0 0 0;
         }
@@ -266,15 +274,17 @@ li {
 
         .header__list {
             display: block;
-            padding: 60px 10px 20px 10px;
+            align-items: center;
+            padding: 30px 10px 20px 10px;
             font-size: 30px;
             font-weight: bold;
+            text-transform: uppercase;
             
             text-align: center;
 
             
             li {
-                margin-bottom: 40px;
+                margin-bottom: 60px;
                 
                 &:last-child {
                     display: none;
@@ -301,6 +311,10 @@ li {
     @media(max-width: 570px){
         .header__title{
             font-size: 55px;
+        }
+        .header__list {
+            font-size: 22px;
+            text-align: right;
         }
     }
     
