@@ -171,7 +171,7 @@ li {
 
     @media(max-width: 1050px){
         .header__list {
-            font-size: 30px;
+            font-size: 20px;
         }
         .header__title {
             font-size: 130px;
@@ -777,6 +777,15 @@ li {
             color: #000;
         }
     }
+    @media(max-width: 1170px) {
+        img {
+            width: 220px;
+            height: 370px;
+        }
+        .team__block {
+            margin: 0 auto;
+        }
+    }
     @media(max-width: 1025px){
         &__block {
             margin: 0 auto;
@@ -803,6 +812,11 @@ li {
                 margin: 0 auto;
                 margin-bottom: 30px;
             }
+        }
+        img {
+            width: 270px;
+            height: 414px;
+            margin-bottom: 30px;
         }
     }
 }

@@ -183,7 +183,7 @@ li {
 
 @media (max-width: 1050px) {
   .header .header__list {
-    font-size: 30px;
+    font-size: 20px;
   }
   .header .header__title {
     font-size: 130px;
@@ -854,6 +854,16 @@ li {
   color: #000;
 }
 
+@media (max-width: 1170px) {
+  .team img {
+    width: 220px;
+    height: 370px;
+  }
+  .team .team__block {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1025px) {
   .team__block {
     margin: 0 auto;
@@ -881,6 +891,11 @@ li {
   }
   .team__block:last-child {
     margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .team img {
+    width: 270px;
+    height: 414px;
     margin-bottom: 30px;
   }
 }
