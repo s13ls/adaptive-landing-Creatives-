@@ -34,6 +34,13 @@
     font-family: 'Gotham', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+body.lock {
+    overflow: hidden;
+}
+
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -45,6 +52,24 @@ a {
 }
 li {
     list-style: none;
+}
+
+.gotop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 40px;
+    border-radius: 50px;
+    background-color: #11749E;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 10;
+    display: none;
+    @media(max-width: 768px) {
+    }
 }
 
 .header {
@@ -813,9 +838,11 @@ li {
         width: 100%;
         display: flex;
         padding: 0 10px;
+        
         &-text {
             width: 100%;
             padding: 0 10px;
+            
         }
 
 
@@ -849,7 +876,8 @@ li {
         margin-bottom: 40px;
         color: #fff;
         font-size: 15px;
-        padding: 20px 20px;
+        padding: 10px 10px;
+        
 
         &::placeholder {
             color: #fff;
@@ -881,6 +909,7 @@ li {
         background-size: cover;
         height: 280px;
         width: 100%;
+        display: none;
         
     }
     @media(max-width: 569px){
